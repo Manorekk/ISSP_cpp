@@ -3,9 +3,9 @@
 double down(int n)
 {
     double suma = 0;
-    for(int i = 1; i <= n; i++ )
+    for (int i = 1; i <= n; i++)
     {
-        suma += 1.0/i;
+        suma += 1.0 / i;
     }
     return suma;
 }
@@ -13,9 +13,9 @@ double down(int n)
 double up(int n)
 {
     double suma = 0;
-    for(int i = n; i > 0; i-- )
+    for (int i = n; i > 0; i--)
     {
-        suma += 1.0/i;
+        suma += 1.0 / i;
     }
     return suma;
 }
@@ -23,9 +23,9 @@ double up(int n)
 float down_float(int n)
 {
     float suma = 0;
-    for(int i = 1; i <= n; i++ )
+    for (int i = 1; i <= n; i++)
     {
-        suma += 1.0f/i;
+        suma += 1.0f / i;
     }
     return suma;
 }
@@ -33,9 +33,9 @@ float down_float(int n)
 float up_float(int n)
 {
     float suma = 0;
-    for(int i = n; i > 0; i-- )
+    for (int i = n; i > 0; i--)
     {
-        suma += 1.0f/i;
+        suma += 1.0f / i;
     }
     return suma;
 }
