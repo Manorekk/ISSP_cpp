@@ -1,1 +1,1 @@
-# ISSP_cpp
+# Bartosz Lubański
