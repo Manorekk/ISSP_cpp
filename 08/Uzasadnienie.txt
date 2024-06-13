@@ -1,0 +1,11 @@
+Podpunkt a:
+W większości przypadków, używanie `std::endl` lub `"\n"` nie ma dużego wpływu na działanie programu. Obie opcje kończą linię tekstu, ale `std::endl` dodatkowo wywołuje operację flush, czyli opróżnienia bufora wyjścia. Można powiedzieć, że `std::endl` można zastąpić `"\n"` wraz z `std::flush`, co jest szczególnie przydatne w programach z dużą ilością danych wyjściowych.
+
+Podpunkt b:
+Aby uruchomić debugger w CLion, używam specjalnego trybu debugowania. Wydaje mi się, że funkcja silnia zawiera błąd zarówno w wywołaniu, jak i w implementacji. W wywołaniu funkcji używany jest typ `unsigned int`, który może prowadzić do problemów, ponieważ po osiągnięciu zera może przejść na maksymalną wartość. W implementacji, zmienna `i` jest konwertowana na `unsigned int`, co może prowadzić do nieoczekiwanych wartości. Rozwiązaniem jest zmiana typu `i` na `int` w pętli. Jednakże, zwracane wartości silni mogą przekroczyć zakres typu `int`.
+
+Podpunkt c:
+Rozpoczynam debugowanie dodając breakpointy w pętli wywołującej funkcje oraz w ich implementacjach. Funkcja silnia wykonuje się szybciej, ponieważ odwołuje się do siebie tylko raz. Natomiast funkcja Fibonacciego wykonuje dwukrotnie więcej wywołań rekurencyjnych, co dla dużych wartości prowadzi do wykładniczego wzrostu ilości wywołań dla jednej liczby.
+
+Podpunkt e:
+Tryb debug umożliwia wgląd w zmienne i przechowuje dodatkowe informacje, takie jak informacje o zmiennych czy stosie. Tryb release wykonuje się do zakończenia programu lub do napotkania błędu, z pełnymi optymalizacjami kompilatora w celu zwiększenia wydajności i zmniejszenia zużycia pamięci.
